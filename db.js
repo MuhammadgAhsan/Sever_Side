@@ -454,7 +454,7 @@ app.put('/Checkup/:appointmentId', async (req, res) => {
 });
 
 const PORT = 8082;
-mongoose.connect('mongodb://127.0.0.1:27017/userDB', { useNewUrlParser: true, useUnifiedTopology: true })
+mongoose.connect('mongodb+srv://ah7an07:4d8CxyozofrkLOam@cluster0.fg06i.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0', { useNewUrlParser: true, useUnifiedTopology: true })
     .then(() => {
         console.log("Connected to MongoDB");
         app.listen(PORT, () => {
